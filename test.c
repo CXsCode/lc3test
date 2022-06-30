@@ -23,7 +23,7 @@ int main(int argc,char *argv[])
     unsigned decodeSize = lc3_decoder_size(dtUs, srHz);
     //单帧的采样数
     uint16_t sampleOfFrames = lc3_frame_samples(dtUs, srHz);
-    //单帧字节数，一个采样占用两个字节
+    //单帧字节数，16Bits下一个采样占用两个字节
     uint16_t bytesOfFrames = sampleOfFrames*2;
     //编码器缓存
     void* encMem = NULL;
